@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name = Kirara Launcher
+Comment = Asistente y diccionario de japo que usa la api de jisho
+Exec =python3 /home/usr/Desktop/kirara_launcher/kirara_main.py
+Icon =/home/usr/Desktop/kirara_launcher/kirara_Icon.png
+Terminal = false
+Type = Application
+Categories = Utility;
