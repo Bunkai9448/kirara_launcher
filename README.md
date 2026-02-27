@@ -9,7 +9,7 @@ Launcher, asistente y diccionario de japo que usa la api de jisho.
 Abre la terminal y ejecuta los comandos que se indican a continuación (Puedes copiar y pegar):  
 ```
 # Permite permisos de ejecucion a los archivos (Solo hace falta la primera vez)
-chmod +x ./kirara_launcher ./kirara.desktop kirara_launcher/*.py
+chmod +x ../kirara_launcher ./kirara.desktop kirara_launcher/*.py
 ```
 
 Tienes dos opciones para ejecutarlo:
