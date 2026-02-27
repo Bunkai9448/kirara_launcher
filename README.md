@@ -23,6 +23,7 @@ Cualquier carácter adicional después de `!` o `?` se ignora.
 
 ## FAQ
 
+El proyecto esta programado en python3 y usa la libreria pyqt5.
 Para usar la radio se requiere ffplay, que forma parte del paquete [ffmpeg](https://ffmpeg.org/).
 
 ## About
