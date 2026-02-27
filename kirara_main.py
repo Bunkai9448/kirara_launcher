@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QVBoxLayout, QLineEdi
 from PyQt5.QtCore import Qt
 
 from jisho_apiCall import *
+from radio_commands import *
 
 class kirara(QWidget):
     def __init__(self):
@@ -27,8 +28,15 @@ class kirara(QWidget):
 
     def comando_dic(self):
         texto = self.input.text()
-        result = jisho_Dic(texto)
-        self.label.setText(result)
+        if texto[0] == "!":
+            result = play_radio()
+            self.label.setText(result)
+        elif texto[0] == "?":
+            result = stop_radio()
+            self.label.setText(result)
+        else:
+            result = jisho_Dic(texto)
+            self.label.setText(result)
         self.input.clear()
 
 
@@ -36,4 +44,8 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     ventana = kirara()
     ventana.show()
+
+    # Evita dejar la radio conectada
+    app.aboutToQuit.connect(stop_radio)
+
     sys.exit(app.exec_())
