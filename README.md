@@ -26,6 +26,8 @@ Cualquier carácter adicional después de `!` o `?` se ignora.
 El proyecto esta programado en python3 y usa la libreria pyqt5.  
 Para usar la radio se requiere ffplay, que forma parte del paquete [ffmpeg](https://ffmpeg.org/).
 
+- Includes a shell script to use VPN, It's made with AI, in case the radio has geo-lock. Due to the nature of the script and the perms required it has to be launched separately.
+
 ## About
 
 Created by Bunkai
